@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus Ultra Fitness | Creativity</title>
+    <link rel="stylesheet" href="creativity.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">⚡</span>
+        <div>
+          <h1>Plus Ultra Fitness</h1>
+          <p class="tagline">This is where we push past our limits!</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link" href="../About_Us/about.html">About</a>
+        <a class="nav-link" href="../Registration/registration.html"
+          >Membership Registration</a
+        >
+        <a class="nav-link active" href="creativity.html">Creativity</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <div class="panel-top">
+          <h2>Workout of the Day</h2>
+          <button id="themeToggle" class="btn secondary" type="button">
+            Toggle Light/Dark
+          </button>
+        </div>
+
+        <p class="muted">
+          Click generate to get a workout plan. Then track your weekly goal with
+          the progress tool. Here are two of the many features available with
+          your paid membership. Have fun pushing your limits!
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Generator</h3>
+            <button id="generateBtn" class="btn" type="button">
+              Generate Workout
+            </button>
+
+            <div class="workout" aria-live="polite">
+              <p><strong>Focus:</strong> <span id="focusOut">—</span></p>
+              <p><strong>Warm-up:</strong> <span id="warmupOut">—</span></p>
+              <p><strong>Main:</strong> <span id="mainOut">—</span></p>
+              <p><strong>Finisher:</strong> <span id="finisherOut">—</span></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Goal Tracker</h3>
+            <p class="muted">Weekly goal: <strong>4 workouts</strong></p>
+
+            <div class="tracker">
+              <label for="completed">Workouts completed (0–4)</label>
+              <input id="completed" type="number" min="0" max="4" value="0" />
+              <button id="updateBtn" class="btn" type="button">
+                Update Progress
+              </button>
+            </div>
+
+            <div class="bar-wrap" aria-label="Progress bar">
+              <div id="bar" class="bar" style="width: 0%"></div>
+            </div>
+
+            <p id="progressMsg" class="muted" aria-live="polite">0% complete</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Plus Ultra Fitness. All rights reserved.</p>
+    </footer>
+
+    <script src="creativity.js"></script>
+  </body>
+</html>
