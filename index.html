@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus Ultra Fitness | Home</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">⚡</span>
+        <div>
+          <h1>Plus Ultra Fitness</h1>
+          <p class="tagline">This is where we push past our limits!</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="About_Us/about.html">About</a>
+        <a class="nav-link" href="Registration/registration.html">Membership</a>
+        <a class="nav-link" href="Creativity_Page/creativity.html">Creativity</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero panel">
+        <div class="hero-text">
+          <h2>Welcome to Plus Ultra Fitness</h2>
+          <p class="muted">
+            Explore our gym story, register for membership, and try our workout
+            generator + progress tracker.
+          </p>
+
+          <div class="actions">
+            <a class="btn" href="About_Us/about.html">Visit About Us</a>
+            <a class="btn secondary" href="Registration/registration.html"
+              >Register</a
+            >
+            <a class="btn" href="Creativity_Page/creativity.html"
+              >Try Creativity Page</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img
+            class="hero-img"
+            src="Images/gym_hero_pic.jpg"
+            alt="Plus Ultra Fitness training area"
+          />
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>About Us</h3>
+          <p class="muted">Mission, values, programs, and gym gallery.</p>
+        </article>
+
+        <article class="card">
+          <h3>Membership</h3>
+          <p class="muted">
+            Registration form with JavaScript validation and error messages.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Creativity</h3>
+          <p class="muted">
+            Random workout generator, progress bar tracker, and theme toggle.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Plus Ultra Fitness. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
